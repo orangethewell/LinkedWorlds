@@ -34,7 +34,7 @@ LOGGING_CONFIG = logging.basicConfig(
     ],
 )
 
-ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
+ALLOWED_HOSTS = ["*"] # os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
 
 # Application definition
 ASGI_APPLICATION = 'core.asgi.application'
