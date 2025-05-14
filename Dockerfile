@@ -10,4 +10,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["daphne", "-b", "0.0.0.0", "-p", "8000", "app.asgi:application"]
+CMD ["daphne", "-b", "0.0.0.0", "-p", "8000", "core.asgi:application"]
