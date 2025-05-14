@@ -2,6 +2,6 @@ services:
   django:
     build: .
     ports:
-      - "8000:8000"
+      - 8005:8000
     volumes:
       - .:/app
